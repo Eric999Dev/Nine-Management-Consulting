@@ -1,0 +1,139 @@
+/*!
+Theme Name: neufmc
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: neufmc
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+neufmc is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,300i,400,500,600,700&display=swap');
+@import './slick-theme.scss';
+@import './slick.scss';
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+    font-family: 'Prompt',
+    sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    background-image: url('./images/ninemc.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+main, section{
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1165px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+div,ul,li{font-size: 15px;}
+
+h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center
+}
+p{
+    font-family: 'Prompt',
+    sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+section{
+    padding: 20px 0px;
+
+    div{
+        margin: 0 auto;
+    }
+}
+
+#staff{
+    color: #fff;
+    background-color: #1A1819;
+}
+
+.slider{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1165px;
+    height: 200px;
+}
+
+footer{
+    
+    background-color: #B38D46;
+    color: #fff;
+}
+
+footer section{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1165px;
+    
+
+    div a{
+        color:#fff;
+        text-decoration: none;
+    }
+
+
+    div img{
+        width: 70px;
+    }
+}
+
+footer section article{
+    
+        max-width: 992px;
+        width: 100%;
+}
+
+footer section article address{
+    font-style: normal;
+}
+@media all and(min-width:992px){
+    footer section article{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: normal;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    
+
+    article{
+        div:first-of-type{
+            align-self: center;
+        }
+    }
+}
