@@ -16,8 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 neufmc is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*Font*/
 
@@ -78,13 +76,44 @@ section{
 #staff{
     color: #fff;
     background-color: #1A1819;
+    text-align: center;
+   
+
+    .profil{
+       
+            img {
+                width: 150px;
+            }
+
+    }
+
+                .descriptif-profil {
+                   
+                    // top: 152px;
+                    // left: 50%;
+                    // transform: translate(-50%, -50%);
+                    width: 100%;
+                    min-height: 187px;
+                    display: none;
+                    margin-bottom: 15px;
+
+                }
+
 }
 
 .slider{
     margin: 0 auto;
     text-align: center;
     max-width: 1165px;
+    width: 100%;
     height: 200px;
+}
+
+.slide{
+ 
+    img{
+        margin: 0 auto;
+    }
 }
 
 footer{
@@ -136,4 +165,21 @@ footer section article address{
             align-self: center;
         }
     }
+}
+
+@media all and(min-width:1024px){
+    .slider{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.slide {
+
+    img {
+        margin: 0 auto;
+        width: 200px;
+    }
+}
 }

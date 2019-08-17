@@ -46,7 +46,14 @@ $imgPartenaire5 = $imgPartenaire['url'];
 <section id="staff">
     <div class="container">
     <h1>Notre effectif</h1>
-
+    <div class="profil">
+        <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
+        <p>CTO Nine Consulting Management</p>
+    </div>
+     <div class="descriptif-profil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at assumenda qui</p>
+        </div>
+    
     </div>
 </section>
 <section id="contact"></section>
