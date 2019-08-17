@@ -33,22 +33,43 @@ $imgPartenaire5 = $imgPartenaire['url'];
     
 <section id="presentation">
     <div class="container">
-<h1>Présentation</h1>
-<p>L’agence Nine Management-Consulting est une structure qui est en collaboration avec le cabinet d’agents Sport’s Business Academy  afin de pouvoir aide les joueurs dans leurs parcours sportifs dans la gestion de carrière (négociations de contrat, recherche de sponsor, mise en place de programme de préparation physique avec un préparateur physique diplômé). </p>
+<span></span><h1>Présentation</h1>
+<p>L’agence Nine Management-Consulting est une structure qui est en collaboration avec le cabinet d’agents Sport’s Business Academy  afin de pouvoir aider les joueurs dans leurs parcours sportifs dans la gestion de carrière (négociations de contrat, recherche de sponsor, mise en place de programme de préparation physique avec un préparateur physique diplômé). </p>
 </div>  
 </section>
 <section id="us">
     <div class="container">
-    <h1>Qui sommes-nous ?</h1>
+    <span></span><h1>Qui sommes-nous ?</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident ullam beatae maiores, delectus placeat saepe id libero eaque pariatur dolor, quasi, illo vero. Expedita distinctio exercitationem autem in reprehenderit!</p>
 </div>
 </section>
 <section id="staff">
     <div class="container">
-    <h1>Notre effectif</h1>
-    <div class="profil">
+    <span></span><h1>Notre effectif</h1>
+    <div class="cto item">CTO</div>
+    <div class="cto-profil">
         <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
-        <p>CTO Nine Consulting Management</p>
+        <p>TANGUY Eric</p>
+        <p>CTO of Nine Consulting Management</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
+    </div>
+    <div class="webdesigner item">Webdesigner</div>
+    <div class="webdesigner-profil">
+        <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
+        <p>TANGUY Eric</p>
+        <p>Webdesigner of Nine Consulting Management</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
+    </div>
+    <div class="agent item">Agent</div>
+    <div class="agent-profil">
+        <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
+        <p>TANGUY Eric</p>
+        <p>Agent of Nine Consulting Management</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
+
+    </div>
+    <div class="profil">
+        
     </div>
      <div class="descriptif-profil">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at assumenda qui</p>
@@ -58,11 +79,11 @@ $imgPartenaire5 = $imgPartenaire['url'];
 </section>
 <section id="contact"></section>
 <div class="container">
-
+<span></span> <h1>Contact</h1>     
 </div>
 <section id="partenaire">
     <div class="container">
-    <h1>Partenaires</h1>
+    <span></span><h1>Partenaires</h1>
 
         <div class="slider">
     <div class="slide"><img src="<?= $imgPartenaire1?>" alt=""></div>
@@ -76,7 +97,7 @@ $imgPartenaire5 = $imgPartenaire['url'];
 </section>
 <section id="actualite">
     <div class="container">
-    <h1>Actualités</h1>
+    <span></span><h1>Actualités</h1>
     </div>
 </section>
 

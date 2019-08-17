@@ -244,7 +244,8 @@ header {
   height: 70vh;
   width: 100%; }
 
-main, section {
+main,
+section {
   width: 100%;
   margin: 0 auto; }
 
@@ -252,14 +253,20 @@ main, section {
   max-width: 1165px;
   margin: 0 auto;
   padding: 0 15px; }
+  .container span {
+    border-bottom: 3px solid #b68527;
+    width: 25px;
+    display: inline-block; }
 
-div, ul, li {
+div,
+ul,
+li {
   font-size: 15px; }
 
 h1 {
   font-size: 20px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: left; }
 
 p {
   font-family: 'Prompt', sans-serif;
@@ -274,12 +281,28 @@ section {
 #staff {
   color: #fff;
   background-color: #1A1819;
-  text-align: center; }
-  #staff .profil img {
-    width: 150px; }
+  min-height: 308px; }
+  #staff .cto,
+  #staff .webdesigner,
+  #staff .agent {
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-bottom: 10px; }
+  #staff .or {
+    background-color: #b68527; }
+  #staff .cto-profil,
+  #staff .webdesigner-profil,
+  #staff .agent-profil {
+    display: none;
+    text-align: center;
+    cursor: pointer; }
+    #staff .cto-profil img,
+    #staff .webdesigner-profil img,
+    #staff .agent-profil img {
+      width: 150px; }
   #staff .descriptif-profil {
     width: 100%;
-    min-height: 187px;
     display: none;
     margin-bottom: 15px; }
 
@@ -294,7 +317,10 @@ section {
   margin: 0 auto; }
 
 footer {
-  background-color: #B38D46;
+  background: -webkit-gradient(linear, left top, left bottom, from(#decf91), to(#b68527));
+  background: -webkit-linear-gradient(#decf91, #b68527);
+  background: -o-linear-gradient(#decf91, #b68527);
+  background: linear-gradient(#decf91, #b68527);
   color: #fff; }
 
 footer section {

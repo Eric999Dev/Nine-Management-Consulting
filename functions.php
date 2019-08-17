@@ -82,7 +82,7 @@ if ( ! function_exists( 'neufmc_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'neufmc_setup' );
-add_action( 'init', 'wpm_jquery' );
+// add_action( 'init', 'wpm_jquery' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
