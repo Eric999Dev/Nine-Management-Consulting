@@ -46,34 +46,35 @@ $imgPartenaire5 = $imgPartenaire['url'];
 <section id="staff">
     <div class="container">
     <span></span><h1>Notre effectif</h1>
-    <div class="cto item">CTO</div>
-    <div class="cto-profil">
+    <div class="wrap">
+        <ul id="tab-nav">
+            <li><a href="#" class="tab-nav-active" data-tab="onglet1">CTO</a></li>
+            <li><a href="#" data-tab="onglet2">Webdesigner</a></li>
+            <li><a href="#" data-tab="onglet3">Agent</a></li>
+        </ul>
+        <div>
+        <div id="onglet1" class="cto-profil tab tab-active">
         <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
         <p>TANGUY Eric</p>
         <p>CTO of Nine Consulting Management</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
-    </div>
-    <div class="webdesigner item">Webdesigner</div>
-    <div class="webdesigner-profil">
+        </div>
+        <div id="onglet2" class="webdesigner-profil tab">
         <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
         <p>TANGUY Eric</p>
         <p>Webdesigner of Nine Consulting Management</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
-    </div>
-    <div class="agent item">Agent</div>
-    <div class="agent-profil">
+        </div>
+        <div id="onglet3" class="agent-profil tab">
         <img src="<?php echo get_template_directory_uri();?>/images/avatar.png" alt="">
         <p>TANGUY Eric</p>
         <p>Agent of Nine Consulting Management</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremqu</p>
 
-    </div>
-    <div class="profil">
-        
-    </div>
-     <div class="descriptif-profil">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at assumenda qui</p>
         </div>
+    </div>
+
+
     
     </div>
 </section>

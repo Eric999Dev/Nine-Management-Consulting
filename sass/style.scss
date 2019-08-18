@@ -105,17 +105,10 @@ section {
         margin-bottom: 10px;
     }
 
-    .or {
-        background-color: #b68527;
-
-    }
-
-
     .cto-profil,
     .webdesigner-profil,
     .agent-profil {
         display: none;
-        
         text-align: center;
         cursor: pointer;
 
@@ -125,15 +118,45 @@ section {
 
     }
 
-    .descriptif-profil {
-
-        width: 100%;
+    .tab {
         display: none;
-        margin-bottom: 15px;
+    }
+
+    .tab-active {
+        display: block;
+    }
+
+    #tab-nav li {
+        display: inline-block;
+    }
+
+    #tab-nav a {
+        display: block;
+        padding: 10px 5px;
+        color: #fff;
+        text-transform: none;
+        text-decoration: none;
+    }
+
+    #tab-nav a:hover {
+        background-color: #b68527;
 
     }
 
+    #tab-nav {
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+
+    #tab-nav .tab-nav-active {
+        background-color: #b68527;
+    }
 }
+
+
 
 .slider {
     margin: 0 auto;

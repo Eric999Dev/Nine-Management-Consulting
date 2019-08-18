@@ -37,36 +37,25 @@ jQuery(document).ready(function () {
         $('.slider').slick('unslick');
     }
 
-    // $('#staff').mouseenter(function(){
-    //     $('.profil img').hide();
-    //     $('.descriptif-profil').show();
-    // });
+    /* Code de gestion des onglets  */
+    /* On surveille les clics sur les liens du menu de navigation */
 
-    // $('#staff').mouseleave(function (){
-    //     $('.profil img').show();
-    //     $('.descriptif-profil').hide();
-    // });
+    jQuery('#tab-nav a').click(function (e) {
+        /* Code a executer en cas de clic sur un des liens */
+        e.preventDefault();
+        var tab = jQuery(this).data('tab');
 
-    $('.item').click(function(){
+        /* On supprime la class tab-nav-active de tous les onglets*/
+        jQuery('#tab-nav a').removeClass('tab-nav-active');
 
-        // if (!$(this).hasClass('or')) {
-        //     $(this).removeClass('or');
-        //     $(this).next().hide();
-        //     
-        // }
-        if($(this).hasClass('or')){
-            $(this).removeClass('or');
-            $(this).next().hide();
-            var notCurrent = !$(this);
-            console.log(notCurrent);
-            $(notCurrent).addClass('or');
-            $(notCurrent).next().show();
-        }else{
-            $(this).addClass('or');
-            $(this).next().show();
-        }
-   
+        /* On supprime la class tab-active de tous les contenus */
+        jQuery('.tab').removeClass('tab-active');
 
-});
 
+
+        /* On ajoute la classe tab-active à l'onglet qui doit être visible */
+        jQuery('#' + tab).addClass('tab-active');
+        /* On ajoute la classe tab-nav-active à l'onglet activé */
+        jQuery(this).addClass('tab-nav-active');
+    });
    });

@@ -289,8 +289,6 @@ section {
     border: 1px solid transparent;
     cursor: pointer;
     margin-bottom: 10px; }
-  #staff .or {
-    background-color: #b68527; }
   #staff .cto-profil,
   #staff .webdesigner-profil,
   #staff .agent-profil {
@@ -301,10 +299,28 @@ section {
     #staff .webdesigner-profil img,
     #staff .agent-profil img {
       width: 150px; }
-  #staff .descriptif-profil {
-    width: 100%;
-    display: none;
-    margin-bottom: 15px; }
+  #staff .tab {
+    display: none; }
+  #staff .tab-active {
+    display: block; }
+  #staff #tab-nav li {
+    display: inline-block; }
+  #staff #tab-nav a {
+    display: block;
+    padding: 10px 5px;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none; }
+  #staff #tab-nav a:hover {
+    background-color: #b68527; }
+  #staff #tab-nav {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    margin: 0 auto 15px;
+    text-align: center; }
+  #staff #tab-nav .tab-nav-active {
+    background-color: #b68527; }
 
 .slider {
   margin: 0 auto;
