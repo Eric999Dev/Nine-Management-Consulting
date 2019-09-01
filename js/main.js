@@ -1,5 +1,16 @@
 jQuery(document).ready(function () {
-    
+    //Menu
+
+    	$('.btn-navigation').click(function () {
+    	    $(this).find('.barre').toggleClass('white');
+    	    $('.navigation').toggleClass('isOpen');
+    	});
+
+    	$('.icon').click(function () {
+    	    $('.menu').slideToggle();
+        });
+        
+        
     jQuery('.slider').slick({
        autoplay: true,
            autoplaySpeed: 2000,
@@ -60,7 +71,7 @@ jQuery(document).ready(function () {
     });
 
 
-
+// Bouton Scroll to top
     var btn = $('#button');
 
     $(window).scroll(function () {
@@ -77,5 +88,43 @@ jQuery(document).ready(function () {
             scrollTop: 0
         }, '300');
     });
+
+    // Scroll to section
+
+     $('.menu-presentation').click(function () {
+         $('html,body').animate({
+             scrollTop: $("#presentation").offset().top
+         }, 'slow');
+     });
+
+      $('.menu-us').click(function () {
+          $('html,body').animate({
+              scrollTop: $("#us").offset().top
+          }, 'slow');
+      });
+
+       $('.menu-staff').click(function () {
+           $('html,body').animate({
+               scrollTop: $("#staff").offset().top
+           }, 'slow');
+       });
+
+        $('.menu-contact').click(function () {
+            $('html,body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 'slow');
+        });
+
+         $('.menu-partenaire').click(function () {
+             $('html,body').animate({
+                 scrollTop: $("#partenaire").offset().top
+             }, 'slow');
+         });
+
+         $('.menu-actualite').click(function () {
+             $('html,body').animate({
+                 scrollTop: $("#actualite").offset().top
+             }, 'slow');
+         });
 
    });

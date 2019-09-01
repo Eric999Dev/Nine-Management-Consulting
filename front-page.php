@@ -48,9 +48,9 @@ $imgPartenaire5 = $imgPartenaire['url'];
     <span></span><h1>Notre effectif</h1>
     <div class="wrap">
         <ul id="tab-nav">
-            <li><a href="#" class="tab-nav-active" data-tab="onglet1">CTO</a></li>
-            <li><a href="#" data-tab="onglet2">Webdesigner</a></li>
-            <li><a href="#" data-tab="onglet3">Agent</a></li>
+            <li><a href="#" class="tab-nav-active onglet" data-tab="onglet1">CTO</a></li>
+            <li><a href="#" class=" onglet" data-tab="onglet2">Webdesigner</a></li>
+            <li><a href="#" class=" onglet" data-tab="onglet3">Agent</a></li>
         </ul>
         <div>
         <div id="onglet1" class="cto-profil tab tab-active">
