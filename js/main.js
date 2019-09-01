@@ -58,4 +58,24 @@ jQuery(document).ready(function () {
         /* On ajoute la classe tab-nav-active à l'onglet activé */
         jQuery(this).addClass('tab-nav-active');
     });
+
+
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
+    });
+
    });

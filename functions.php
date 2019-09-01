@@ -124,11 +124,13 @@ add_action( 'widgets_init', 'neufmc_widgets_init' );
  
 function neufmc_scripts() {
 	wp_enqueue_style( 'neufmc-style', get_stylesheet_uri() );
+	
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+
 	wp_enqueue_script( 'neufmc-jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'neufmc-slick', get_template_directory_uri() . '/js/slick.js', array(), '20151215', true );
 	wp_enqueue_script( 'neufmc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	
-	wp_enqueue_script( 'neufmc-slides', 'https://kenwheeler.github.io/slick/slick/slick.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'neufmc-main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'neufmc-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
