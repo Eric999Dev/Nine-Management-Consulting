@@ -78,7 +78,9 @@ $imgPartenaire5 = $imgPartenaire['url'];
     
     </div>
 </section>
-<section id="contact"></section>
+<section id="contact">
+
+</section>
 <div class="container">
 <span></span> <h1>Contact</h1>     
 </div>

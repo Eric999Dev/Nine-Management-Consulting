@@ -42,6 +42,7 @@
 					<li><a href="#contact" class="menu-contact">Contact</a></li>
 					<li><a href="#partenaire" class="menu-partenaire">Partenaires</a></li>
 					<li><a href="#actualite" class="menu-actualite">Actualités</a></li>
+					<li><a href="">Blog</a></li>
 				</ul>
 			</nav>
 

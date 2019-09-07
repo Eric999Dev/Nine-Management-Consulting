@@ -233,7 +233,6 @@ section {
     .agent-profil {
         display: none;
         text-align: center;
-        cursor: pointer;
 
         img {
             width: 150px;
@@ -301,6 +300,11 @@ footer {
     background: linear-gradient(#decf91, #b68527);
     // background-color: #B38D46;
     color: #fff;
+
+    a{
+         color: #fff;
+         text-decoration: none;
+    }
 }
 
 footer section {
@@ -328,6 +332,89 @@ footer section article {
 
 footer section article address {
     font-style: normal;
+}
+
+footer .rs{
+    a{
+        margin-right: 15px;
+    }
+
+    .facebook:before {
+        content: "\f082";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+    }
+
+    .facebook:hover:before{
+        color:#1A1819;
+    }
+
+    .linkedin:before {
+        content: "\f0e1";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+    }
+
+    .linkedin:hover:before{
+        color:#1A1819;
+    }
+
+     .twitter:before {
+         content: "\f099";
+         font-family: FontAwesome;
+         font-weight: normal;
+         font-style: normal;
+         font-size: 2em;
+         line-height: 50px;
+     }
+
+         .twitter:hover:before {
+             color: #1A1819;
+         }
+
+        .instagram:before {
+            content: "\f16d";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+        }
+
+            .instagram:hover:before {
+                color: #1A1819;
+            }
+}
+
+footer .trait{
+    border-bottom: 1px solid #fff;
+}
+
+@media all and(min-width:768px){
+    #staff{
+
+        #tab-nav{
+            display: none;
+        }
+        .wrap{
+         & >div{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+
+                & div {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 @media all and(min-width:992px) {

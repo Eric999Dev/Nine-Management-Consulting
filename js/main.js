@@ -51,6 +51,7 @@ jQuery(document).ready(function () {
     /* Code de gestion des onglets  */
     /* On surveille les clics sur les liens du menu de navigation */
 
+    if($(window).width() < 768){
     jQuery('#tab-nav a').click(function (e) {
         /* Code a executer en cas de clic sur un des liens */
         e.preventDefault();
@@ -69,7 +70,7 @@ jQuery(document).ready(function () {
         /* On ajoute la classe tab-nav-active à l'onglet activé */
         jQuery(this).addClass('tab-nav-active');
     });
-
+    }
 
 // Bouton Scroll to top
     var btn = $('#button');

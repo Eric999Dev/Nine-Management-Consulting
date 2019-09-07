@@ -409,8 +409,7 @@ section {
   #staff .webdesigner-profil,
   #staff .agent-profil {
     display: none;
-    text-align: center;
-    cursor: pointer; }
+    text-align: center; }
     #staff .cto-profil img,
     #staff .webdesigner-profil img,
     #staff .agent-profil img {
@@ -455,6 +454,9 @@ footer {
   background: -o-linear-gradient(#decf91, #b68527);
   background: linear-gradient(#decf91, #b68527);
   color: #fff; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
 
 footer section {
   margin: 0 auto;
@@ -472,6 +474,76 @@ footer section article {
 
 footer section article address {
   font-style: normal; }
+
+footer .rs a {
+  margin-right: 15px; }
+
+footer .rs .facebook:before {
+  content: "\f082";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px; }
+
+footer .rs .facebook:hover:before {
+  color: #1A1819; }
+
+footer .rs .linkedin:before {
+  content: "\f0e1";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px; }
+
+footer .rs .linkedin:hover:before {
+  color: #1A1819; }
+
+footer .rs .twitter:before {
+  content: "\f099";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px; }
+
+footer .rs .twitter:hover:before {
+  color: #1A1819; }
+
+footer .rs .instagram:before {
+  content: "\f16d";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px; }
+
+footer .rs .instagram:hover:before {
+  color: #1A1819; }
+
+footer .trait {
+  border-bottom: 1px solid #fff; }
+
+@media all and (min-width: 768px) {
+  #staff #tab-nav {
+    display: none; }
+  #staff .wrap > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #staff .wrap > div div {
+      display: block; } }
 
 @media all and (min-width: 992px) {
   footer section article {
