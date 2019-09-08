@@ -29,7 +29,7 @@ $imgPartenaire4 = $imgPartenaire['url'];
 $imgPartenaire = get_field('partenaire_5'); 
 $imgPartenaire5 = $imgPartenaire['url'];
 ?>
-<main>
+<main id="fullpage">
  <a id="button" href=""></a>   
 <section id="presentation">
     <div class="container">

@@ -36,13 +36,13 @@
 
 			<nav id="site-navigation" class="navigation">
 				<ul>
-					<li><a href="#presentation" class="menu-presentation">Présentation</a></li>
-					<li><a href="#us" class="menu-us">Qui sommes-nous ?</a></li>
-					<li><a href="#staff" class="menu-staff">Staff</a></li>
-					<li><a href="#contact" class="menu-contact">Contact</a></li>
-					<li><a href="#partenaire" class="menu-partenaire">Partenaires</a></li>
-					<li><a href="#actualite" class="menu-actualite">Actualités</a></li>
-					<li><a href="">Blog</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#presentation" class="menu-presentation">Présentation</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#us" class="menu-us">Qui sommes-nous ?</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#staff" class="menu-staff">Staff</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#contact" class="menu-contact">Contact</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#partenaire" class="menu-partenaire">Partenaires</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/#actualite" class="menu-actualite">Actualités</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
 				</ul>
 			</nav>
 
