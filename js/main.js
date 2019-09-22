@@ -72,10 +72,30 @@ jQuery(document).ready(function () {
     });
     }
 
+    // Mexu fixed au scroll
+
+
 // Bouton Scroll to top
     var btn = $('#button');
 
     $(window).scroll(function () {
+        if ($(window).scrollTop() > 0) {
+            // var scroll = $(window).scrollTop();
+            // console.log(scroll);
+            $('.navigation').addClass('fixed-scroll');
+
+            if ($(window).scrollTop() > 820){
+                $('.navigation img').addClass('show-logo');
+            }else{
+                $('.navigation img').removeClass('show-logo');
+            }
+
+        } else {
+           
+            $('.navigation').removeClass('fixed-scroll');
+          
+        }
+
         if ($(window).scrollTop() > 300) {
             btn.addClass('show');
         } else {
